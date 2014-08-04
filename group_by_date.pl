@@ -7,7 +7,7 @@ package group_by_date;
 
 use Data::Dumper;
 
-run( @ARGV ) unless caller;
+run( @ARGV ) if !caller;
 
 sub run {
     my ( $file_glob ) = @_;
